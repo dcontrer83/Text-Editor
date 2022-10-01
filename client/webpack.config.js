@@ -27,8 +27,10 @@ module.exports = () => {
         swDest: 'src-sw.js',
       }),
       new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
         name: 'Text Editor',
-        short_name: 'Text Editor',
+        short_name: 'JATE',
         description: 'Create notes or code snippets with or without an internet connection.',
         background_color: '#7eb4e2',
         theme_color: '#7eb4e2',
